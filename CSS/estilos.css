@@ -1,0 +1,498 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Opern Sans', sans-serif;
+}
+
+nav{
+     position: fixed;
+     top: 20px;
+     left: 20px;     
+     display: flex;
+     justify-content: flex-start;
+}
+
+header{
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: auto;
+    padding: 48px;
+    width: 100%;
+}
+
+.container{
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+
+} 
+
+img{
+    display: block;
+    height: 450px;
+    object-fit: cover;
+    width: auto;
+    animation: arriba 1s ease-in;
+}
+
+.textos{
+    width: 50%;
+    color: #fff;
+}
+
+.textos h1{
+    font-size: 80px;
+    animation: moverDerecha 1s ease-in;
+}
+
+.textos h2{
+    font-size: 30px;
+    animation: moverIzquierda 1s ease-in;
+}
+
+.textos a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    width: 150px;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 0;
+    animation: arriba 1s ease-in;
+}
+.wave{
+    height: 100px;
+    width: 100%;
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+     
+}
+
+@keyframes moverIzquierda{
+    0%{
+        opacity: 0;
+        transform: translate(-100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moverDerecha  {
+    0%{
+        opacity: 0;
+        transform: translate(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes arriba{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.uno{
+    -webkit-clip-path: circle(0% at 0 0);
+    clip-path: circle(0% at 0 0);
+}
+
+.dos{
+    -webkit-clip-path: circle(139.9% at 1% 1%);
+    clip-path: circle(139.9% at 1% 1%);
+}
+
+.enlaces{
+    position: fixed;
+    display: flex;
+    top: 0;
+    background: #000;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    left: 0%;
+    flex-direction: column;
+    width: 100%;
+    transition: all 1s ease;
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+         
+
+}
+
+.icono{
+    display: block;
+    z-index: 100000000;
+    animation: moverIz quierda 1s ease-in;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none; 
+}
+
+@media screen and (max-width:1000px){
+    img{
+        height: 400px;
+    }
+
+}
+
+@media screen and (max-width:800px){
+    img{
+        height: 370px;
+    }
+    .textos h1{
+        font-size: 70px;
+    }
+    .textos h2{
+        font-size: 25px;
+    }
+    
+}
+
+@media screen and (max-width:700px){
+    img{
+        height: 250px;
+    }
+    .textos h1{
+        font-size: 40px;
+    }
+    .textos h2{
+        font-size: 15px;
+    }
+    
+}
+
+@media screen and (max-width:450px){
+    .container{
+        width: 100%;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    .textos{
+        width: 100%;
+        text-align: center;
+    }
+    .textos h1{
+        font-size: 60px;
+    }
+    .textos h2{
+        font-size: 25px;
+    }
+    
+}
+
+@media screen and (max-width:340px){
+    .container{
+        width: 100%;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    img{
+        height:  160px;
+    };
+    .textos a{
+        width: 120px;
+    }
+    .textos h1{
+        font-size: 35px;
+    }
+    .textos h2{
+        font-size: 15px;
+    }
+    
+}
+
+.logotipo{
+    width: 200px;
+    padding: 10px 0;
+}
+
+.iconos-header-redes{
+    width: 25px;
+    margin: 10px 5px;
+}
+
+.Head-Web{
+    margin-top: 20px;
+    text-align: center;
+}
+
+h1{
+    font-size: 30px;
+}
+.seccion{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+.contenedor{
+    max-width: 900px;
+    margin: auto;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.contenedor-Home{
+    max-width: 700px;
+    margin: auto;
+    text-align: justify;
+    text-justify: inter-word;
+    justify-content: space-between;
+}
+
+.contenido-header{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contenido-header h1{
+    color: #ffffff;
+    padding-bottom: 2rem;
+    max-width: 60rem;
+    line-height: 2;
+}
+.barra{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-item img{
+    height: 700px;
+}
+
+aside{
+    height: 200px;
+    width: 200px;
+    margin: 10%;
+    margin-top: 0%;
+}
+
+footer{
+    margin: 10%;
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+.form_label{
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.form_group-imput{
+    position: relative;
+
+}
+
+.form__input{
+    width: 100%;
+    background-color:aliceblue;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+}
+
+.form__input:focus{
+    border: 3px solid #0075FF;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+
+
+}
+
+.form__input-error{
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+
+}
+
+.form__input-error-activo{
+    display: block;
+}
+
+.form__valid-state{
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+
+
+
+.form__mensaje,
+.form__group-btn-enviar{
+    grid-column: span 2;
+}
+
+.form__mensaje{
+    height: 45px;
+    line-height: 45px;
+    background: #F66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none;
+}
+
+.form__mensaje-activo{
+    display: block;
+}
+
+.form__mensaje p{
+    margin: 0%;
+}
+
+.form__group-btn-enviar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__btn{
+    height: 45px;
+    line-height: 45px;
+    width: 30%;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
+}
+
+.form__btn:hover{
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+}
+
+.form__mensaje-exito{
+    font-size: 14px;
+    color: #119200;
+    display: none;
+}
+
+.form__mensaje-exito-activo{
+    display: block;
+}
+
+.td_body{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(), auto;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.gallery-card{
+    width: 230px;
+    margin-bottom: 30px;
+    background-color: lightgray;
+}
+
+.gallery-card img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    cursor: zoom-in;
+}
+
+.gallery-card:hover{
+    filter: opacity(0.4);
+    transform: scale(1.04) rotate(1deg);
+}
+
+.img_icon{
+    border-radius: 100px;
+}
+
+.form__group-correcto .form__valid-state{
+    color: #1ed12d;
+    opacity: 1;
+}
+
+.form__group-incorrecto .form_label{
+    color: #bb2929;
+}
+
+.form__group-incorrecto .form__valid-state{
+    color: #bb2929;
+    opacity: 1;
+}
+
+.form__group-incorrecto .form__input{
+    border: 3px solid  #bb2929;
+    opacity: 1;
+}
+
+/* Media Queries */
+
+@media screen and(max-width:800px){
+    .formulario{
+        grid-template-columns: 1fr;
+    }
+    .form__mensaje,
+    .form__group-btn-enviar{
+        grid-column: 1;
+    }
+    .form__btn{
+        width: 100%;
+    }
+
+}
+
+
+/* .gallery-card img:hover{
+    transform: scale(1.0);
+} */

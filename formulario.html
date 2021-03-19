@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" id="icono" class="icono">Menú</a>
+            <div class="enlaces uno" id="enlaces">
+                <a href="index.html">Tarea De Multiplicación</a>
+                <a href="formulario.html">Tarea de Formulario con Validaciones</a>
+                <a href="galeria.html">Tarea Galeria de Imagenes</a>
+            </div> 
+        </nav>
+        <div class="container">
+            <div class="textos">
+                <h1>LegnarACV2 Page</h1>
+                <h2>Formulario de Registro</h2>
+                <a href="">Info...</a>
+            </div>
+            <img src="Mate.png" alt="">
+        </div>
+    </header>
+    <div class="wave">
+        <div style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+    </div>
+
+
+    <section class="contenedor seccion">
+        <div class="contenido-web">
+            <h2 class="centrar-texto">Los Formularios de Registro</h2>
+            <p>
+                Un formulario es un documento, físico o digital, elaborado para que un usuario introduzca datos estructurados (nombres, apellidos, dirección, fecha, etc.) en las zonas correspondientes, para ser almacenados y procesados posteriormente.           
+            </p>
+            <p>
+                Aquí te proveemos de un Formulario que cumple con campos obligatorios que seran requeridos llenar para poder realizar el correcto envio del Formulario, los mismos con validados mediante JavaScript.
+            </p>
+        </div>
+    </section>
+
+    <main class="contenedor seccion contenido-web" id="cuerpo_main" >
+        <h2 class="Head-Web">My Formulario</h2>
+
+        <form action="" class="formulario" id="MyForm">
+            <!-- Grupo: Nombre -->
+            <div class="form__group form__group" id="nombre_group">
+                <label for="nombre" class="form_label">Nombre</label>
+                <div class="form_group-imput">
+                    <input type="text" class="form__input" name="nombre" id="nombre" placeholder="Ingrese Nombre">
+                    <i class="form__valid-state fas fa-times-circle"></i>
+                </div>
+                <p class="form__input-error">El nombre debe tener mas de 3 letras, solo puede contener letras y espacios.</p>
+            </div>
+            <!-- Grupo: Apellido  -->
+            <div class="form__group" id="apellido_group">
+                <label for="apellido" class="form_label">Apellidos</label>
+                <div class="form_group-imput">
+                    <input type="text" class="form__input" name="apellido" id="apellido" placeholder="Ingrese Apellidos">
+                    <i class="form__valid-state fas fa-times-circle"></i>
+                </div>
+                <p class="form__input-error">El apellido debe tener mas de 3 letras, solo puede contener letras y espacios.</p>
+            </div>
+
+            <!-- Grupo: email  -->
+            <div class="form__group" id="email_group">
+                <label for="email" class="form_label">Email</label>
+                <div class="form_group-imput">
+                    <input type="email" class="form__input" name="email" id="email" placeholder="Ingrese Email">
+                    <i class="form__valid-state fas fa-times-circle"></i>
+                </div>
+                <p class="form__input-error">El email solo puede contener letras, numeros, puntos, guiones y guion bajo debe tener el caracter @ y terminar con una extension .com, .do etc...</p>
+            </div>
+
+            <!-- Grupo: Cedula  -->
+            <div class="form__group" id="cedula_group">
+                <label for="cedula" class="form_label">Cedula</label>
+                <div class="form_group-imput">
+                    <input type="tel" class="form__input" name="cedula" id="cedula" placeholder="Ingrese Cedula">
+                    <i class="form__valid-state fas fa-times-circle"></i>
+                </div>
+                <p class="form__input-error">La cedula debe ser una composición de numeros y guiones como en el ejemplo <b>'000-0000000-0'</b>.</p>
+            </div>
+
+            <div class="form__mensaje" id="form__mensaje">
+                <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellenar el formulario correctamente</p>
+            </div>
+
+            <div class="form__group form__group-btn-enviar">
+                <button type="submit" class="form__btn">Enviar</button>
+                <p class="form__mensaje-exito" id="form__mensaje-exito">Formulario enviado de manera exitosa</p>
+            </div>
+
+        </form>
+    </main>
+
+    <footer class="pt-4 my-md-5 pt-md-5 border-top ">
+        <p>
+            San Cristobal, Republica Dominicana <br>
+            rangelfco123@gmail.com <br>
+            849-344-4558 <br>
+            LegnarAcv2 2021- © Todos los derechos reservados
+        </p>
+    </footer>
+    <script src="https://kit.fontawesome.com/e7d9fc88d2.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous"></script>
+    <script src="/Js/archivo_formulario.js"></script>
+</body>
+</html>
+
+<!-- <a href='https://www.freepik.com/psd/education'>Education psd created by freepik - www.freepik.com</a> -->
